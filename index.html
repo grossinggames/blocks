@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blockly</title>
+</head>
+<body style="margin:0">
+    <div id="blocklyArea" style="width: 50vw; height: 100vh; float: left;"></div>
+    <textarea id='textarea' style="width: calc(50vw - 20px);height: 100vh;border: none;padding: 0 !important;" ></textarea>
+    <div id="blocklyDiv" style="position: absolute"></div>
+    
+    <xml id="toolbox" style="display: none">
+      <category name="Сценарий" colour="230">
+        <!-- <block type="start"></block> -->
+        <block type="ttsplay"></block>
+        <block type="start_play"></block>
+        <block type="send_dtmf"></block>
+        <block type="dtmfon"></block>
+        <block type="stton"></block>
+        <block type="refer"></block>
+        <block type="wait"></block>
+        <block type="bye"></block>
+      </category>
+      <category name="Клавиши и слова" colour="120">
+        <block type="on_stt_text"></block>
+        <block type="on_stt_def"></block>
+        <block type="on_dtmf_1"></block>
+        <block type="on_dtmf_2"></block>
+        <block type="on_dtmf_3"></block>
+        <block type="on_dtmf_4"></block>
+        <block type="on_dtmf_5"></block>
+        <block type="on_dtmf_6"></block>
+        <block type="on_dtmf_7"></block>
+        <block type="on_dtmf_8"></block>
+        <block type="on_dtmf_9"></block>
+        <block type="on_dtmf_0"></block>
+        <block type="on_dtmf_lattice"></block>
+        <block type="on_dtmf_asterisk"></block>
+        <block type="on_dtmf_def"></block>
+      </category>
+    </xml>
+    <script src="blockly_compressed.js"></script>
+    <script src="blocks_compressed.js"></script>
+    <script src="javascript_compressed.js"></script>
+    <script src="msg/js/en.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
