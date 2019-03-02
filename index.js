@@ -306,8 +306,8 @@ Blockly.JavaScript['play_video'] = function (block) {
         video: '',
         loop: true,
         next: false,
-        smoothStart: true,
-        smoothFinish: true,
+        smoothStart: false,
+        smoothFinish: false,
         open: function() {
             // PlaySound("sounds/sfx_.mp3", 0);
             // PlaySound("sounds/env_.mp3", 1);
