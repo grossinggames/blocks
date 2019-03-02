@@ -300,7 +300,7 @@ Blockly.Blocks['btn_play'] = {
 
 Blockly.JavaScript['play_video'] = function (block) {
     var nameVideo = block.getFieldValue('name_video');
-    var tabs = getTabs(block);
+    var tabs = getTabs(block);    
     let code = `
     '': {
         video: '',
@@ -355,12 +355,14 @@ Blockly.JavaScript['play_video'] = function (block) {
 
 Blockly.JavaScript['play_s_video'] = function (block) {
     var nameVideo = block.getFieldValue('name_video');
+
     let code = `
     '': {
         video: '',
+        cum_image: '',
         smoothStart: false,
         smoothFinish: false,
-        disableCum: false,
+        cum: true,
         afterCum: true,
         open: function() {
         },
